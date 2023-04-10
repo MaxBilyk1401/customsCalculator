@@ -31,6 +31,9 @@
                                                     <segment title="First"/>
                                                     <segment title="Second"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="countrySegmentedControll:" destination="BYZ-38-t0r" eventType="valueChanged" id="fFH-G0-P3w"/>
+                                                </connections>
                                             </segmentedControl>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yc-DT-U3k">
                                                 <rect key="frame" x="0.0" y="48" width="361" height="81"/>

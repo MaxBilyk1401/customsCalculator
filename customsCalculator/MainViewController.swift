@@ -8,7 +8,6 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
     @IBOutlet weak var countrySegmentedControll: UISegmentedControl!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
@@ -24,18 +23,28 @@ class MainViewController: UIViewController {
     let types: [carType] = carType.allCases
     let brands: [carBrand] = carBrand.allCases
     let fuels: [fuelType] = fuelType.allCases
-    
+    let countries: [countryCoefficient] = countryCoefficient.allCases
+    let toolBar = UIToolbar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configuretTextFields()
+        configureSegmentedControll()
+        configureToolBar()
     }
-
+    
+    
+    @IBAction func countrySegmentedControll(_ sender: Any) {
+        clear()
+    }
+    
     @IBAction func calculateDidTap(_ sender: Any) {
+
     }
     
     @IBAction func clearDidTap(_ sender: Any) {
+        clear()
     }
     
     func configuretTextFields() {
@@ -51,7 +60,54 @@ class MainViewController: UIViewController {
     }
     
     func configureSegmentedControll() {
+        countrySegmentedControll.removeAllSegments()
+        countrySegmentedControll.insertSegment(withTitle: "Ukraine", at: 0, animated: false)
+        countrySegmentedControll.insertSegment(withTitle: "USA", at: 1, animated: false)
+        countrySegmentedControll.selectedSegmentIndex = 0
     }
+    
+    func selectType(row: Int) {
+        typeTextField.text = types[row].title
+    }
+    
+    func selectYear(row: Int) {
+        yearTextField.text = years[row].title
+    }
+    
+    func selectBrand(row: Int) {
+        brandTextField.text = brands[row].title
+    }
+    
+    func selectFuel(row: Int) {
+        fuelTextField.text = fuels[row].title
+    }
+    
+    func clear() {
+        let textFields = [typeTextField, yearTextField, brandTextField, fuelTextField]
+        for textField in textFields {
+            textField?.text = ""
+        }
+        typeTextField.becomeFirstResponder()
+    }
+    
+    func configureToolBar() {
+        toolBar.sizeToFit()
+        let done = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneToolBar))
+        toolBar.setItems([done], animated: false)
+        
+        let textFields = [typeTextField, yearTextField, brandTextField, fuelTextField]
+        for textField in textFields {
+            textField?.inputAccessoryView = toolBar
+        }
+    }
+    
+    @objc func doneToolBar() {
+        let textFields = [typeTextField, yearTextField, brandTextField, fuelTextField]
+        for textField in textFields {
+            textField?.resignFirstResponder()
+        }
+    }
+    
 }
 
 extension MainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -84,6 +140,18 @@ extension MainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             return fuels[row].title
         } else {
             return ""
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == typePickerView {
+            return selectType(row: row)
+        } else if pickerView == yearPickerView {
+            return selectYear(row: row)
+        } else if pickerView == brandPickerView {
+            return selectBrand(row: row)
+        } else if pickerView == fuelPickerView {
+            return selectFuel(row: row)
         }
     }
 }

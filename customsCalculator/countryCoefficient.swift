@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum countryCoefficient: CaseIterable {
-    case ukraine
-    case usa
+enum countryCoefficient: Int, CaseIterable {
+    case ukraine = 0
+    case usa = 1
     
     var title: String {
         switch self {
