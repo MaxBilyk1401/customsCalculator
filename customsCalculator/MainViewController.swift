@@ -34,13 +34,37 @@ class MainViewController: UIViewController {
         configureToolBar()
     }
     
-    
     @IBAction func countrySegmentedControll(_ sender: Any) {
         clear()
     }
     
     @IBAction func calculateDidTap(_ sender: Any) {
-
+        let typeIndex = typePickerView.selectedRow(inComponent: 0)
+        let type = types[typeIndex]
+        let typeValue = type.value
+        
+        let yearIndex = yearPickerView.selectedRow(inComponent: 0)
+        let year = years[yearIndex]
+        let yearValue = year.value
+        
+        let brandIndex = brandPickerView.selectedRow(inComponent: 0)
+        let brand = brands[brandIndex]
+        let brandValue = brand.value
+        
+        let fuelIndex = fuelPickerView.selectedRow(inComponent: 0)
+        let fuel = fuels[fuelIndex]
+        let fuelValue = fuel.value
+        
+        guard let selectedCountry = countryCoefficient(rawValue: countrySegmentedControll.selectedSegmentIndex) else { return }
+        
+        switch selectedCountry {
+        case .ukraine:
+            let result = Double(typeValue + yearValue + brandValue + fuelValue) * selectedCountry.value
+            showAlertMessage(with: String(result))
+        case .usa:
+            let result = Double(typeValue + yearValue + brandValue + fuelValue) * selectedCountry.value
+            showAlertMessage(with: String(result))
+        }
     }
     
     @IBAction func clearDidTap(_ sender: Any) {
@@ -99,6 +123,12 @@ class MainViewController: UIViewController {
         for textField in textFields {
             textField?.inputAccessoryView = toolBar
         }
+    }
+    
+    func showAlertMessage(with title: String) {
+        let alert = UIAlertController(title: "Your result", message: title, preferredStyle: .alert)
+        alert.addAction(.init(title: "Ok", style: .default))
+        self.present(alert, animated: true)
     }
     
     @objc func doneToolBar() {
