@@ -1,0 +1,16 @@
+"Country.case0" = "Ukraine";
+"Country.case1" = "USA";
+"Type.case0" = "Sedan";
+"Type.case1" = "Coupe";
+"Type.case2" = "Station wagon";
+"Type.case3" = "Mini van";
+"Fuel.case0" = "Petrol";
+"Fuel.case1" = "Diesel";
+"Fuel.case2" = "Gas";
+"Fuel.case3" = "Electro";
+"Type.title" = "Type";
+"ProductionYear.title" = "Production Year";
+"Brand.title" = "Brand";
+"Fuel.title" = "Fuel";
+"CalculateButton.title" = "Calculate";
+"ClearButton.title" = "Clear";

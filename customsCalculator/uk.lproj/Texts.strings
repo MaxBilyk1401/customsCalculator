@@ -1,0 +1,16 @@
+"Country.case0" = "Україна";
+"Country.case1" = "США";
+"Type.case0" = "Седан";
+"Type.case1" = "Купе";
+"Type.case2" = "Універсал";
+"Type.case3" = "Мінівен";
+"Fuel.case0" = "Бензин";
+"Fuel.case1" = "Дизель";
+"Fuel.case2" = "Газ";
+"Fuel.case3" = "Електрика";
+"Type.title" = "Тип";
+"ProductionYear.title" = "Рік виробництва";
+"Brand.title" = "Бренд";
+"Fuel.title" = "Паливо";
+"CalculateButton.title" = "Розрахувати";
+"ClearButton.title" = "Очистити";

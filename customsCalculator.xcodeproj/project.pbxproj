@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90021A5F5CB265EAB8BAA923 /* Pods_customsCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1B8CDF3AF331ED5364D1C /* Pods_customsCalculator.framework */; };
 		9D14DF9B29E41A36002CAF4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DF9A29E41A36002CAF4C /* AppDelegate.swift */; };
 		9D14DF9D29E41A36002CAF4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DF9C29E41A36002CAF4C /* SceneDelegate.swift */; };
 		9D14DF9F29E41A36002CAF4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DF9E29E41A36002CAF4C /* MainViewController.swift */; };
@@ -18,9 +19,14 @@
 		9D14DFB329E43244002CAF4C /* fuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DFB229E43244002CAF4C /* fuelType.swift */; };
 		9D14DFB529E43337002CAF4C /* countryCoefficient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DFB429E43337002CAF4C /* countryCoefficient.swift */; };
 		9D14DFB729E433BE002CAF4C /* productionYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DFB629E433BE002CAF4C /* productionYear.swift */; };
+		9D14DFDE29E70642002CAF4C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14DFDD29E70642002CAF4C /* R.generated.swift */; };
+		9D14DFE329E71AEF002CAF4C /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D14DFE529E71AEF002CAF4C /* Texts.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24A1B8CDF3AF331ED5364D1C /* Pods_customsCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customsCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		562E29C4282873F817D631B8 /* Pods-customsCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customsCalculator.release.xcconfig"; path = "Target Support Files/Pods-customsCalculator/Pods-customsCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		6B12CB78A371814F674C8B57 /* Pods-customsCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customsCalculator.debug.xcconfig"; path = "Target Support Files/Pods-customsCalculator/Pods-customsCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		9D14DF9729E41A36002CAF4C /* customsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D14DF9A29E41A36002CAF4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D14DF9C29E41A36002CAF4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +40,11 @@
 		9D14DFB229E43244002CAF4C /* fuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuelType.swift; sourceTree = "<group>"; };
 		9D14DFB429E43337002CAF4C /* countryCoefficient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countryCoefficient.swift; sourceTree = "<group>"; };
 		9D14DFB629E433BE002CAF4C /* productionYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productionYear.swift; sourceTree = "<group>"; };
+		9D14DFDD29E70642002CAF4C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		9D14DFDF29E7096A002CAF4C /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		9D14DFE029E7096A002CAF4C /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9D14DFE429E71AEF002CAF4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
+		9D14DFE629E71AF3002CAF4C /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90021A5F5CB265EAB8BAA923 /* Pods_customsCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A54EBAC947BD314C25648E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B12CB78A371814F674C8B57 /* Pods-customsCalculator.debug.xcconfig */,
+				562E29C4282873F817D631B8 /* Pods-customsCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7CE8A4EC37952BC3B770E524 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A1B8CDF3AF331ED5364D1C /* Pods_customsCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D14DF8E29E41A36002CAF4C = {
 			isa = PBXGroup;
 			children = (
 				9D14DF9929E41A36002CAF4C /* customsCalculator */,
 				9D14DF9829E41A36002CAF4C /* Products */,
+				01A54EBAC947BD314C25648E /* Pods */,
+				7CE8A4EC37952BC3B770E524 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +97,10 @@
 		9D14DF9929E41A36002CAF4C /* customsCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9D14DFB029E43049002CAF4C /* carBrand.swift */,
 				9D14DFB629E433BE002CAF4C /* productionYear.swift */,
 				9D14DFAE29E42EF9002CAF4C /* carType.swift */,
-				9D14DFB029E43049002CAF4C /* carBrand.swift */,
+				9D14DFDD29E70642002CAF4C /* R.generated.swift */,
 				9D14DFB229E43244002CAF4C /* fuelType.swift */,
 				9D14DFB429E43337002CAF4C /* countryCoefficient.swift */,
 				9D14DF9A29E41A36002CAF4C /* AppDelegate.swift */,
@@ -78,6 +110,7 @@
 				9D14DFA329E41A37002CAF4C /* Assets.xcassets */,
 				9D14DFA529E41A37002CAF4C /* LaunchScreen.storyboard */,
 				9D14DFA829E41A37002CAF4C /* Info.plist */,
+				9D14DFE529E71AEF002CAF4C /* Texts.strings */,
 			);
 			path = customsCalculator;
 			sourceTree = "<group>";
@@ -89,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D14DFAB29E41A37002CAF4C /* Build configuration list for PBXNativeTarget "customsCalculator" */;
 			buildPhases = (
+				6E45A9CFA2125C540F2A39E9 /* [CP] Check Pods Manifest.lock */,
+				9D14DFDC29E7041C002CAF4C /* R.Swift */,
 				9D14DF9329E41A36002CAF4C /* Sources */,
 				9D14DF9429E41A36002CAF4C /* Frameworks */,
 				9D14DF9529E41A36002CAF4C /* Resources */,
+				A6372A38E0D5551A2855FB5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +160,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 9D14DF8E29E41A36002CAF4C;
 			productRefGroup = 9D14DF9829E41A36002CAF4C /* Products */;
@@ -141,12 +178,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D14DFA729E41A37002CAF4C /* LaunchScreen.storyboard in Resources */,
+				9D14DFE329E71AEF002CAF4C /* Texts.strings in Resources */,
 				9D14DFA429E41A37002CAF4C /* Assets.xcassets in Resources */,
 				9D14DFA229E41A36002CAF4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E45A9CFA2125C540F2A39E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-customsCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D14DFDC29E7041C002CAF4C /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		A6372A38E0D5551A2855FB5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-customsCalculator/Pods-customsCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-customsCalculator/Pods-customsCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-customsCalculator/Pods-customsCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D14DF9329E41A36002CAF4C /* Sources */ = {
@@ -155,6 +255,7 @@
 			files = (
 				9D14DFB129E43049002CAF4C /* carBrand.swift in Sources */,
 				9D14DFB329E43244002CAF4C /* fuelType.swift in Sources */,
+				9D14DFDE29E70642002CAF4C /* R.generated.swift in Sources */,
 				9D14DF9F29E41A36002CAF4C /* MainViewController.swift in Sources */,
 				9D14DF9B29E41A36002CAF4C /* AppDelegate.swift in Sources */,
 				9D14DF9D29E41A36002CAF4C /* SceneDelegate.swift in Sources */,
@@ -171,6 +272,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9D14DFA129E41A36002CAF4C /* Base */,
+				9D14DFDF29E7096A002CAF4C /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -179,8 +281,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9D14DFA629E41A37002CAF4C /* Base */,
+				9D14DFE029E7096A002CAF4C /* uk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D14DFE529E71AEF002CAF4C /* Texts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D14DFE429E71AEF002CAF4C /* en */,
+				9D14DFE629E71AF3002CAF4C /* uk */,
+			);
+			name = Texts.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -190,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -250,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -302,6 +416,7 @@
 		};
 		9D14DFAC29E41A37002CAF4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B12CB78A371814F674C8B57 /* Pods-customsCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,8 +428,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +445,7 @@
 		};
 		9D14DFAD29E41A37002CAF4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562E29C4282873F817D631B8 /* Pods-customsCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,8 +457,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

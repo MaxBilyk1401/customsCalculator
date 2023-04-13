@@ -77,6 +77,7 @@ class MainViewController: UIViewController {
             pickerView.delegate = self
             pickerView.dataSource = self
         }
+        
         typeTextField.inputView = typePickerView
         yearTextField.inputView = yearPickerView
         brandTextField.inputView = brandPickerView
@@ -85,8 +86,8 @@ class MainViewController: UIViewController {
     
     func configureSegmentedControll() {
         countrySegmentedControll.removeAllSegments()
-        countrySegmentedControll.insertSegment(withTitle: "Ukraine", at: 0, animated: false)
-        countrySegmentedControll.insertSegment(withTitle: "USA", at: 1, animated: false)
+        countrySegmentedControll.insertSegment(withTitle: R.string.texts.countryCase0(), at: 0, animated: false)
+        countrySegmentedControll.insertSegment(withTitle: R.string.texts.countryCase1(), at: 1, animated: false)
         countrySegmentedControll.selectedSegmentIndex = 0
     }
     
@@ -137,7 +138,6 @@ class MainViewController: UIViewController {
             textField?.resignFirstResponder()
         }
     }
-    
 }
 
 extension MainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
